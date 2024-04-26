@@ -1,0 +1,30 @@
+{
+  "id": "4522538",
+  "name": "组件开发",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201638",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12331677",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "12974855",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    }
+  ]
+}
