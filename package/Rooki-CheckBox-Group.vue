@@ -13,7 +13,7 @@
     />
   </div>
 </template>
-<script lang="ts" setup name="Rooki-Checkbox-Group">
+<script lang="ts" setup name="Rooki-CheckBox-Group">
 import { computed, type PropType } from 'vue'
 
 // 定义父组件传递的数据结构的接口

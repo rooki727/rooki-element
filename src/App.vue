@@ -1,5 +1,5 @@
 <template>
-  <Rooki-Dialog></Rooki-Dialog>
+  <div></div>
 </template>
 
 <script setup lang="ts">

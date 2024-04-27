@@ -7,13 +7,15 @@
       buttonProps.plain ? 'is-plain' : '',
       buttonProps.round ? 'is-round' : '',
       buttonProps.circle ? 'is-circle' : '',
-      buttonProps.disabled ? 'is-disabled' : ''
+      buttonProps.disabled ? 'is-disabled' : '',
+      'iconfont',
+      buttonProps.icon ? `icon-${buttonProps.icon}` : ''
     ]"
     :disabled="buttonProps.disabled"
     @click="handleClick"
   >
     <div class="mask" v-if="buttonProps.disabled"></div>
-    <i :icon="buttonProps.icon" v-if="Array.isArray(buttonProps.icon)"></i>
+
     <span v-if="$slots.default">
       <slot></slot>
     </span>
@@ -21,16 +23,16 @@
 </template>
 
 <script lang="ts" setup name="Rooki-Button">
-import { defineEmits, defineProps } from 'vue'
+import '../assets/font/iconfont.css'
 const emit = defineEmits(['click'])
 interface Props {
-  type: 'default' | 'primary' | 'info' | 'success' | 'warning' | 'danger'
-  mimicry: boolean
+  type?: 'default' | 'primary' | 'info' | 'success' | 'warning' | 'danger'
+  mimicry?: boolean
   plain?: boolean
   round?: boolean
   circle?: boolean
-  icon: Array<string> | boolean
-  disabled: boolean
+  icon?: 'bianji' | 'guanbi' | 'shanchu' | 'tianjia'
+  disabled?: boolean
 }
 const buttonProps: Props = defineProps<Props>()
 
