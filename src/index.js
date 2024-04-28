@@ -1,7 +1,7 @@
 //index.js
 import RookiButton from './components/Rooki-Button.vue'
 import RookiCheckBox from './components/Rooki-CheckBox.vue'
-import RookiCheckboxGroup from './components/Rooki-CheckBox-Group.vue'
+import RookiCheckBoxGroup from './components/Rooki-CheckBox-Group.vue'
 import RookiDialog from './components/Rooki-Dialog.vue'
 import RookiForm from './components/Rooki-Form.vue'
 import RookiFormItem from './components/Rooki-Form-Item.vue'
@@ -12,7 +12,7 @@ import RookiSwitch from './components/Rooki-Switch.vue'
 export {
   RookiButton,
   RookiCheckBox,
-  RookiCheckboxGroup,
+  RookiCheckBoxGroup,
   RookiDialog,
   RookiForm,
   RookiFormItem,
@@ -25,7 +25,7 @@ export {
 const components = [
   RookiButton,
   RookiCheckBox,
-  RookiCheckboxGroup,
+  RookiCheckBoxGroup,
   RookiDialog,
   RookiForm,
   RookiFormItem,
@@ -34,9 +34,10 @@ const components = [
   RookiRadio,
   RookiSwitch
 ]
+
 const install = function (App) {
   components.forEach((component) => {
     App.component(component.name, component)
   })
 }
-export default { install } // 批量的引入*
+export default { install } // 单个引入*或批量的引入*

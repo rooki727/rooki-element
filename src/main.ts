@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import RookiButton from './components/Rooki-Button.vue'
 import RookiCheckBox from './components/Rooki-CheckBox.vue'
-import RookiCheckboxGroup from './components/Rooki-CheckBox-Group.vue'
+import RookiCheckBoxGroup from './components/Rooki-CheckBox-Group.vue'
 import RookiDialog from './components/Rooki-Dialog.vue'
 import RookiForm from './components/Rooki-Form.vue'
 import RookiFormItem from './components/Rooki-Form-Item.vue'
@@ -14,7 +14,7 @@ import RookiSwitch from './components/Rooki-Switch.vue'
 const app = createApp(App)
 app.component('Rooki-Button', RookiButton)
 app.component('Rooki-CheckBox', RookiCheckBox)
-app.component('Rooki-Checkbox-Group', RookiCheckboxGroup)
+app.component('Rooki-Checkbox-Group', RookiCheckBoxGroup)
 app.component('Rooki-Dialog', RookiDialog)
 app.component('Rooki-Form', RookiForm)
 app.component('Rooki-Form-Item', RookiFormItem)
@@ -22,4 +22,5 @@ app.component('Rooki-Input', RookiInput)
 app.component('Rooki-Radio-Group', RookiRadioGroup)
 app.component('Rooki-Radio', RookiRadio)
 app.component('Rooki-Switch', RookiSwitch)
+
 app.mount('#app')
